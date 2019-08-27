@@ -1,79 +1,79 @@
 Open main1.py. Before running it, what do you expect this program to do? 
-
+Print out "Greetings!" and then ask "What is my favorite color?" in the line under, allowing for the user to input an answer.
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
-
+It said Greetings! and then under it asked what my favorite color was, allowing me to type an answer, when I pressed enter the session ended.
 What do you think the program did with what you typed?
-
+Nothing, since there was never a variable set to store the input, so once it was taken nothing was done with it.
 
 
 Open main2.py. Before running it, describe how this is different than main1.py. 
-
+Instead of just having the input ask my favourite color, it first sets a variable to take the input in and then has a print line to print the variable.
 What do you think the color = input() will do? 
-
+Store what is typed as an input under the variable 'color'.
 Run the program in the terminal and answer the question. Did the program do what you expected?
-
+Yes, when I entered 'blue' it printed 'blue' in the next line, and since that line was supposed to print the variable 'color' it shows that blue was stored in that variable.
 
 
 Open main3.py. Before running it, describe how this is different than main2.py. 
-
+Instead of just printing the users input it now checks if it was Red, and if it was it has a specific response, and if it was anything else it prints out "Try again!".
 What is happening on lines 11–14? 
-
+It is an if-else statement where a condition is checked and if it is met a certain response is undergone, if not then a different responce goes through.
 Why are lines 12 and 14 indented? 
-
+They are a part of the if and else statements respectively, so they are only run when the if or else passes, otherwise they are ignored.
 Run the program and answer the question. What happens if you don’t capitalize Red? 
-
+If you don’t capitalize Red then it tells you to try again.
 What does this tell you about "color"?
+Color as a variable is case sensitive.
 
 
-
-Open main4.py. Before running it, describe how this is different than main2.py. 
-
+Open main4.py. Before running it, describe how this is different than main3.py. 
+An 'or' statement has been added to the if statement.
 What problem is this trying to solve? 
-
+It is to counteract the case sensitivity that variables have so that capitalization would be less of an issue.
 Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
-
+If you use anything other than "Red" or "red" the program tells you to try again.
 
 
 Open main5.py. What do you expect line 11 to do? 
-
+The .lower will make everything in the string lowercase.
 What problem is it trying to solve? 
-
+It is to allow any capitalization of the word red to be valid, not just red and Red.
 Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)?
-
+It now accepts any capitalization but if spaces are added it asks you to try again.
 
 
 Open main6.py. How is line 11 different than main5.py? 
-
+It added a strip method after the lower method.
 What would you guess .strip() is doing? 
-
+Get rid of any spaces before and after the string.
 Run the program and answer the question. Is there another way of writing “red” that will break this logic?
-
+Yes, if you write it as "r e d" it will not work.
 
 
 Open main7.py. Before running this program, how do you expect this to be different than main6.py? 
-
+It now has an elif case added.
 What is the purpose of line 11? 
-
+This is an additional case specifically made for the response just "pink" where the program will respond with "close!"
 Run the program and answer the question.
-
+It does as expected, answering with "pink" results in a "close!" response.
 
 
 Open main8.py. What is the purpose of line 11? 
-
+It is a while loop that will repeat the question until the correct answer is submitted.
 Why are lines 12–19 indented? 
-
+They are a part of the while loop and only run if the condition of the while loop has not been met yet.
 Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? 
-
+If line 12 was moved then it would no longer repeat the question and there would be nothing to update the string so it would infinitely respond with one of the three responses depending on what the first response was.
 Make that change and run the program again. To end any Python program, you can type ctrl-c.
-
+It loops infinitely.
 
 
 Open main9.py. What is happening on line 12? 
-
+A counter has been added that is set to the integer 0.
 What is the purpose of “count”? 
-
+It counts how many times the user has input an answer.
 What is happening on line 22? 
-
+It prints out a sentence as well as telling the user how many times they answered based on the value from the counter.
 Run the program.
 
 
@@ -81,4 +81,4 @@ Run the program.
 
 Commit your changes and push them back to the repository. 
 
-Did you do the extra credit?
+Did you do the extra credit? Yes
